@@ -9,11 +9,12 @@ public class Aluno {
     private Nota notas;
 
     public Aluno(String nome, Nota notas) {
-        super();
         this.id = UUID.randomUUID();
         this.nome = nome;
         this.notas = notas;
     }
+
+
 
     @Override
     public String toString() {

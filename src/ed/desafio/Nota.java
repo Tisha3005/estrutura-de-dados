@@ -30,6 +30,8 @@ public class Nota {
 		}
 	}
 
+
+
 	@Override
 	public String toString() {
 		return " " + resultado + " -> Media: " + media;
