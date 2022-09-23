@@ -4,7 +4,6 @@ public class Escola {
 
     private Lista alunos;
 
-    // construtor
     public Escola(Lista alunos) {
         this.alunos = alunos;
     }

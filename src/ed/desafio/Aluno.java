@@ -4,9 +4,9 @@ import java.util.UUID;
 
 public class Aluno {
 
-    private UUID id;
-    private String nome;
-    private Nota notas;
+    private final UUID id;
+    private final String nome;
+    private final Nota notas;
 
     public Aluno(String nome, Nota notas) {
         this.id = UUID.randomUUID();
@@ -14,12 +14,14 @@ public class Aluno {
         this.notas = notas;
     }
 
-
+    public Nota getNotas() {
+        return notas;
+    }
 
     @Override
     public String toString() {
-        return "\n ID: " + id +
-                " -> Nome: " + nome +
-                " -> Status do Aluno:" + notas;
+        return "\n" +
+                "\n ID: " + id +
+                "\n Nome: " + nome + notas;
     }
 }
